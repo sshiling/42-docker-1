@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#General command with all parameters of overlord container: docker inspect overlord
+#Get the internal IP address of the overlord container without starting its shell and in one command.
+docker inspect --format '{{ .NetworkSettings.IPAddress }}' overlord

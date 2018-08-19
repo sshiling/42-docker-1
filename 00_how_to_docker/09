@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#for debian container install and run: docker run -it --rm debian
+apt update
+apt install build-essential -y
+apt install git-core -y
+apt install vim -y
+# exit

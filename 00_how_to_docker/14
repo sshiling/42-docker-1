@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# spawning-pool:mysql - indicate explicitly that the container type is mysql 
+docker run -d --name lair --link spawning-pool:mysql -p 8080:80 wordpress

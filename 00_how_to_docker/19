@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# ~/toto:/root - home folder according to phyton requirements
+docker run --name Abathur -v ~/toto:/root -dit -p 3000:3000 python:2-slim
+docker exec Abathur pip install flask
+echo 'from flask import Flask\napp=Flask(__name__)\n@app.route("/")\ndef hello():\n\treturn "<h1>Hello World !</h1>" ' > ~/toto/hello.py && chmod 777 ~/toto/hello.py
+docker exec --env FLASK_APP=/root/hello.py Abathur flask run --host=0.0.0.0 --port=3000

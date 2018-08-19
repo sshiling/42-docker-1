@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#check if spawning pool was created properly
+docker exec spawning-pool env

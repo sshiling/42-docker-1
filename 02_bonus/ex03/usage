@@ -1,0 +1,2 @@
+docker build -t ex03 .
+docker run -p 3030:80 ex03 /usr/sbin/apache2ctl -D FOREGROUND

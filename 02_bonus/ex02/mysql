@@ -1,0 +1,7 @@
+#!/bin/bash
+
+docker pull mysql
+docker pull phpmyadmin/phpmyadmin
+
+docker run --name=sshiling_sql -e MYSQL_ROOT_PASSWORD=12345 -d mysql 
+docker run --name myadmin -d --link sshiling_sql:db -p 8080:80 phpmyadmin/phpmyadmin

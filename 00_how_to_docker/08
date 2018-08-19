@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#docker pull alpine not necessary
+#we can check after with ls command inside alpine container
+docker run -it --rm alpine

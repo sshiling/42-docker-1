@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#create mysql database container and store it in hatchery volume  
+# destination=/etc/mysql - according to mysql requirements
+docker run -d --restart=always --mount type=volume,source=hatchery,destination=/etc/mysql --env MYSQL_DATABASE="zerglings" --env MYSQL_ROOT_PASSWORD="Kerrigan" --name spawning-pool mysql

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# to cheeck it launch: docker network ls
+docker network create --driver overlay overmind
