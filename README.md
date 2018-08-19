@@ -115,3 +115,10 @@ configurations, and launches the application, all as it builds. The container wi
 deemed valid if you can access the web client, create users and interact via GIT with this
 container (HTTPS and SSH). Obviously, you are not allowed to use the official container
 from Gitlab, it would be a shame... <br>
+
+## Bonuses
+
+1. Minecraft Server
+2. C Working Environment
+3. phpMyAdmin and MySQL
+4. Apache Server
