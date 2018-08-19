@@ -122,3 +122,5 @@ from Gitlab, it would be a shame... <br>
 2. C Working Environment
 3. phpMyAdmin and MySQL
 4. Apache Server
+
+#### More about School 42 you can find here: https://en.wikipedia.org/wiki/42_(school)
